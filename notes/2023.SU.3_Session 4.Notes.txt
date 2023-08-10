@@ -1,0 +1,474 @@
+KÌ 5: CỰC KÌ QUAN TRỌNG
+      gom đủ số môn đậu để đủ điều kiện đi thực tập
+      các môn kì 5 vướng môn tiên quyết môn SWE201c
+
+KÌ 6: ĐI THỰC TẬP - OJT - ON THE JOB TRAINING
+      LÀ ĐI LÀM THẬT
+
+KÌ 7, 8, 9
+      chỉ đc học các môn kì này nếu đã hoàn tất thực tập!!!
+---------------------------------------
+SWE - INTRODUCTION TO SOFTWARE ENGINEERING
+         Nhập môn Kĩ thuật (làm) phần mềm
+
+(engine,     engineer, engineering)
+  động cơ     kĩ sư       kĩ thuật         
+- Để làm đc 1 phần mềm, cần nhiều hơn những kĩ thuật, thay vì chỉ nghĩ rằng làm phần mềm là viết code!!!
+
+ĐỂ LÀM ĐC 1 PHẦN MỀM SẼ CÓ RẤT RẤT NHIỀU CÔNG VIỆC, CÔNG ĐOẠN, CÁCH THỨC, PHƯƠNG PHÁP...
+
+XÉT 1 KỊCH BẢN KINH ĐIỂN CỦA VIỆC BẮT ĐẦU LÀM 1 PHẦN MỀM
+
+CÔNG TY CHUYÊN LÀM PHẦN MỀM         ---------- khách sạn, quán ăn
+  FSOFT, LARION, ELCA, NASH TECH,   ---------- nhà hàng, bệnh viện
+  SAIGON TECHNOLOGY, KMS...                    trường, trung tâm 
+                                               ngân hàng, cửa hàng
+
+    CTY LÀM PHẦN MỀM  .......nhận yc làm app .... từ KHÁCH HÀNG
+                      <----$
+                                              --->APP
+      FSOFT   .............................. BỆNH VIỆN CHỢ RẪY
+        ai đó để hiểu bên bệnh viện muốn chi tiết những gì
+                     BA - Business Analyst
+									
+                 Chuyên viên đi (gặp) khách hàng           
+                      lấy đc yêu cầu từ họ: các luồng info, các xử
+                      lí info
+           - app cung cấp tính năng tạo mới hồ sơ bệnh nhân
+             (quầy nhận bệnh)
+           - app có màn hình tạo mới đơn thuốc
+               REQUIREMENTS
+CÁC CÔNG ĐOẠN, CÁC BƯỚC LÀM PHẦN MỀM
+
+1. REQUIREMENTS (công việc của gã BA)
+- hiểu khách hàng muốn gì, tìm ra tên gọi các chức năng, màn hình
+  mà người dùng sẽ dùng trong công việc của họ khi app làm xong
+  mà hiện nay họ đang làm = tay, = app cũ
+- Ví dụ app QLBV: tạo mới hsbn, tạo mới đơn thuốc, xem đơn cũ, search hsbn
+- Ví dụ app FAP: import dssv từ tuyển sinh
+                 generate account FAP, gmail...
+                 cho sv đăng kí môn học
+                 cho sv feedback gv
+								   cho sv xem thời khoá biểu
+				          cho sv kiểm tra lại thông tin điểm danh/view
+								   cho gv điểm danh sv     
+2. DESIGN
+- Design UI (User Interface): HTML/CSS, Figma
+- Design ERD
+- Chọn kiến trúc phần mềm, cách bố trí code: MVC, Micro Services, API...
+
+3. CODE HOY/IMPLEMENTATION/DEVELOPMENT
+- Tuyệt kĩ các môn lập trình
+- Lập trình back-end, front-end
+
+4. KIỂM THỬ/TÌM BUG/TESTING
+- Thánh soi đi tìm lỗi, bất thường của app
+
+5. ĐƯA CHO KHÁCH HÀNG SỬ DỤNG/DEPLOYMENT
+- đóng gói thành setup.exe đưa lên mạng download
+- đóng gói thành .apk đưa lên CH Play
+- đóng gói thành .war đưa lên 1 server (Heroku) map với tên miền
+  domain name appcuatui.com
+
+6. NÂNG CẤP/BẢO TRÌ
+            FIX BUG, ENHANCEMENT
+          UPGRADING, MAINTERNANCE
+ 
+
+CÁC MÔ HÌNH/PHƯƠNG PHÁP LÀM PHẦN MỀM: KĨ THUẬT PHA CHẾ KẾT HỢP 6 BƯỚC TRÊN
+- TRADITIONAL: WATERFALL, SASHIMI, V-MODEL, SPIRAL
+- MODERN: AGILE (SCRUM, XP, KANBAN, LEAN...)
+
+===================================================
+BÀI 2: ĐI SÂU VÀO QUY TRÌNH, MÔ HÌNH LÀM PHẦN MỀM
+
+1. MỘT GÓC NHÌN KHÁC VỀ CÁCH LÀM APP SO VỚI 6 BƯỚC MÔ TẢ TRÊN - ZOOM CẬN CẢNH 1 SỐ CÔNG ĐOẠN 
+                         MÔ HÌNH WRSPM (zoom sâu vào giai đoạn requirements - reqs)
+          WORLD                      REQUIREMENTS                    SPECIFICATION         PROGRAM                    MACHINE                                 
+- Thế giới k/h                  - Mong đợi của k/h về tính                             - Design màn hình       - Máy cài app (desktop
+                                                                                                                 mobile) 
+- Thế giới người đặt hàng         năng, chức năng, tên các                             - Code/Implement code   - Server cài web app
+  mình làm app                    màn hình mà họ sẽ dùng sau                             để ra app             
+- Người ta chưa có app            này trong c/v của họ nếu                             - Kiểm thử
+- Người ta đã có app cũ           app đc làm xong
+
+																															 
+  BA sẽ xem k/h đang làm        - Những lời hứa về tính năng app    
+  việc ra sao, để tìm cách        mà BA viết ra hứa với k/h rằng
+  biến việc họ đang làm (tay      app sẽ làm đc những điều k/h
+  Excel, Word, giấy tờ, app cũ)   đang làm = tay
+  thành các màn hình phần mềm
+
+Ví dụ:  
+* Chủ quán cafe cần làm app     - App có tính năng generate QR ứng
+  Chăm sóc k/h, tích điểm         với 1 k/h. 1 k/h 1 QR
+  Nay đang dùng card ghi        - App tích điểm dựa trên số tiền mua 
+  số lần mua                      1 điểm ứng với 1000 đồng trên bill
+  5 lần mua, khuyến mãi 1 ly      (đóng dấu gấu bông lên card)   
+  Ưu điểm/nhược điểm có đủ      - Đổi điểm dùng khuyến mãi (voucher)
+                                  - thu thẻ đã full dấu gấu
+                               
+                                                SPECIFICATION (ĐẶC TẢ CHI TIẾT, MÔ TẢ CẬN CẢNH)
+                                                - TA GOM TẤT CẢ CÀC REQUIREMENTS THÀNH 1 TÀI LIỆU ĐẸP, CHUẨN
+   						  NÓ SẼ LÀ CĂN CỨ ĐỂ CÙNG VỚI K/H CONFIRM XÁC NHẬN THỨ
+                         			  APP HỌ SẼ ĐC TRẢI NGHIỆM
+				                  NÓ CÒN LÀ TÀI LIỆU CHUẨN ĐỂ ĐỊNH HƯỚNG DÂN DEV VIẾT CODE
+                              		          THEO NHỮNG GÌ ĐÃ HỨA
+						  - .pdf, .docx
+	                                        - CHỨA REQS, DESIGN (UI, DB, KIẾN TRÚC CODE)							 	
+
+2. SÓNG BẮT ĐẦU TỪ GIÓ, VIẾT APP BẮT ĐẦU TỪ WORLD/REQUIREMENTS
+- BA SẼ LÀ CÁI GÃ TÌM RA CÁC REQUIREMENTS TỪ KHÁCH HÀNG/NGƯỜI ĐẶT HÀNG LÀM APP
+  Business Analyst (gã khác - PO - Product Owner)
+							
+- BÍ QUYẾT, KHẨU QUYẾT, MANTRA KHI LÀM VIỆC VỚI K/H ĐỂ TÌM REQS
+  CÓ 3 LOẠI CÂU HỎI BA/PO ĐC KHUYÊN DÙNG KHI LÀM VIỆC VỚI K/H
+
+Q1: APP VIẾT CHO "AI" DÙNG? AI SẼ DÙNG APP MÀ CHÚNG TÔI ĐANG VIẾT CHO BẠN
+    "WHO - LOGIN SCREEN"
+
+Q2: "AI" SẼ LÀM ĐC GÌ VỚI APP, "AI" SẼ DÙNG TÍNH NĂNG, MÀN HÌNH GÌ CỦA APP  	
+    "WHAT - NEED, GOAL, TARGET, PURPOSE"
+    "TÊN MÀN HÌNH, TÊN CHƯC NĂNG, UI KÈM XỬ LÍ"
+
+Q3: NHỮNG MẢNH THÔNG TIN (PIECE OF DATA/INFOMATION) NÀO CẦN LƯU TRỮ VÀ XỬ LÍ
+    "WHAT - DATA - DATABASE"  
+-----------------------
+VÍ DỤ: NĂM 2006 TRƯỜNG 3 CHỮ ĐC THÀNH LẬP
+- Trường 3 chữ đặt hàng FSoft làm app QLĐT - FAP - FPT University Academic Portal
+  FSoft  .................................................. FU
+                            BA  ......................> thầy HT, BGH, Trưởng khoa, GV, 
+							Academic Staff (PĐT)
+                                             xem mn làm việc thế nào - WORLD
+* AI SẼ XÀI/DÙNG APP??? ROLE
+  - Student
+  - Lecturer
+  - A. Staff
+  - thầy Hiệu trưởng???
+    ĐỪNG BẮT CÁC SẾP LÀM ADMIN, HAY CÓ ACCOUNT ĐỂ VÀO XEM CHI TIẾT INFO CỦA DOANH NGHIỆP
+                             CTY MÌNH QUẢN LÍ
+                                DÀN LÍNH GIÚP LẤY INFO TỔNG HỢP GỬI SẾP
+                         ADMIN, VÀ DÀN LÍNH ĐC MƯỚN ĐỂ QUẢN LÍ INFO
+                         ADMIN là "vua trong đám data, đc trao quyền quản lí data"
+                                   KO ĐỒNG NGHĨA LÀ SẾP NGOÀI ĐỜI  
+* AI SẼ DÙNG GÌ Ở APP, LÀM ĐC GÌ VỚI APP, WHAT, GÓC NHÌN TÍNH NĂNG
+      LÀM ĐC GÌ NGHĨA LÀ PHẢI ĐẠT ĐC ĐIỀU GÌ, MÀ BÌNH THƯỜNG KO CÓ APP HỌ CŨNG PHẢI LÀM
+      PHẢI ĐẠT ĐC  									          
+- Student làm gì với app
+  - Login (ko có Register)
+  - Feedback 
+  - View news  
+  - View timetable
+  - View attendance
+  - Register course
+  - Change course/class  
+  - Send form
+  - ...
+
+- Lecturer
+  - View timetable
+  - Check attendance
+  - Download grade book
+ 
+- Academic Staff (admin - quản lí data)
+  - CRUD từa lưa (Create/Retrieve (Read)/Update/Delete)
+  
+VERB + ADV/OBJECT ĐỘNG TỪ CHỈ HÀNH ĐỘNG CỦA USER/ROLE/AI LÀM ĐC 1 ĐIỀU GÌ CHO HỌ  	
+NHỮNG REQUIREMENTS NÓI VỀ CHỨC NĂNG TÍNH NĂNG TÊN MÀN HÌNH MÀ USER/AI LÀM ĐC VỚI APP THÌ ĐC GỌI LÀ: 
+           FUNCTIONAL REQUIREMENTS - YÊU CẦU VỀ CHỨC NĂNG		
+(câu phát biểu nói rằng người dùng/ai đó làm đc gì với app để đc điều gì mà bt họ vẫn phải làm = tay, hàng ngày khi chưa có app, nay làm = app nếu app đc viết xong)
+
+***** 1 - 1.5 điểm trong bài thi PE
+
+- TRONG GIANG HỒ CÒN 1 CÁCH VIẾT KHÁC VỀ CÁI FUNCTIONAL REQS Ở TRÊN, VẪN CÙNG Ý NGHĨA
+  CHỈ LÀ VIẾT KIỂU "MÀU MÈ" HƠN 
+  Student
+     - view timetable
+
+  > viết "màu mè" AS A STUDENT I WANT TO VIEW TIMETABLE SO THAT I CAN NOT BE MISSED ANY CLASS
+ 
+  Lecturer
+     - check atendance
+  > AS A LECTURER, I WANT TO CHECK STUDENT ATTENDANCE SO THAT THE SCHOOL CAN RECORD THE STUDENT ATTENDANCE    
+
+  VIẾT THEO KIỂU GAME NHẬP VAI, CHÍNH MÔ TẢ LUÔN CÁI LOGIN VÀO LÀM ĐC CÁI GÌ
+  TEMPLATE ĐỂ VIẾT GAME NHẬP VAI - CÁCH VIẾT KHÁC CHO FUNCTIONAL REQS
+
+       AS A <ROLE> I WANT <WHAT> SO THAT <PURPOSE>             
+
+  CÂU FUNCTIONAL REQS KIỂU ĐẸP TRAI NÀY ĐC GỌI TÊN MỚI LÀ: USER STORY
+      CÂU CHUYỆN NHẬP VAI CỦA USER - VIẾT NGẮN, MÔ TẢ MỤC ĐÍCH LUÔN 
+
+* 1 - 1.5 điểm của bài PE
+
+---------
+KHÁCH HÀNG ĐÔI KHI CÒN PHÁT BIỂU THẾ NÀY:
+
+- TUI MÚN APP PHẢI THIẾT KẾ ĐẸP HENG, DỄ DÙNG NHEN. NÓI CHUNG TÍNH NĂNG CRUD PHẢI DỄ DÙNG NHEN
+- TUI MÚN APP PHẢI CHẠY NHANH NHEN. NHANH LÀ KHI NHẤN NÚT, 3S TRỞ LẠI LÀ PHẢI CÓ KẾT QUẢ
+- TUI MÚN APP PHẢI BẢO MẬT, AN TOÀN, MÚN LÀM SAI CŨNG KHÓ, VÌ ĐÂU CÓ QUYỀN. CHIA RÕ RÀNG CÁC ROLE, AI LÀM VIỆC NẤYY
+- TUI MÚN APP AVAILBLE TRÊN MỌI NỀN TẢNG, ĐỂ K/H CỦA TUI TIỆN DÙNG MỌI LÚC MỌI NƠI, CHẠY TRÊN CÁC OS NỔI TIẾNG IOS, ANDROID
+- TUI MÚN APP HÕ TRỢ TIẾNG VIỆT, ANH, NHẬT, HÀN, TRUNG
+... 
+đặc điểm chung của những câu này: MÔ TẢ CÁI TRẢI, CẢM XÚC, ĐẶC ĐIỂM, TÍNH CHẤT, CHẤT LƯỢNG CỦA CÁI APP - KHI XÀI APP THẤY NÓ TIỆN, ĐÃ
+DO TẤT CẢ CÁC CHỨC NĂNG MÀN HÌNH ĐEM LẠI CẢM GIÁC NÀY, KO ĐỀ CẬP CHI TIẾT TÍNH NĂNG NÀO
+MÀ NÓI CHUGN CHUNG CHO TOÀN BỘ CÁC CHỨC NĂNG
+
+  CÁC CÂU PHÁT BIỂU/HỨA KIỂU NÀY ĐC GỌI LÀ: NON-FUNCTIONAL REQS
+                                         ko focus vào 1 chức năng
+                                         mà áp dụng chung cho toàn bộ app
+       YÊU CẦU PHI-CHỨC NĂNG 
+
++ BÍ QUYẾT: ADJ, TÍNH TỪ MÔ TẢ TÍNH CHẤT
+   "nhanh chậm" "đẹp xấu" "an toàn bảo mật" "dễ dùng" "đa nền" "sẵn sàng"
+   "đã vãi" "to nhỏ"
+
+
+
+   ***** 0.5 - 1 điểm của bài thi PE
+
+
+XEM THÊM CÁC VÍ DỤ VỀ FUNCTIONAL     ,   NON-FUNCTIONAL REQS
+                       V + O                   ADJ 
+                    lưu trữ, xử lí         metric độ đo tính chất trải nghiệm cảm xúc
+
+XEM Ở CHEATSHEET BẢNG TÓM LƯỢC KIẾN THỨC Ở TRÊN GITHUB
+
+=============================================
+RECAP LẠI BÀI HỌC SỐ 2
+- CÁC CÔNG ĐOẠN, CÁC BƯỚC ĐỂ LÀM 1 P/M: REQUIREMENTS, DESIGN, IMPLEMENTATION, TESTING, DEPLOYEMENT, MAINTERNANCE/ENHANCEMENT
+- MÔ HÌNH WRSPM (WORLD, REQUIREMENTS, SPECIFICATION, PROGRAM, MACHINE)
+          CHI TIẾT HƠN VỀ REQUIREMENTS, SÓNG BẮT ĐẦU TỪ GIÓ, VIẾT APP BẮT ĐẦU TỪ AI ĐÓ ĐẶT HÀNG 
+                                                             VIẾT APP BẮT ĐẦU TỪ REQUIREMENTS
+- REQUIREMENTS: CÂU PHÁT BIỂU VỀ TÍNH NĂNG PHẦN MỀM/MÀN HÌNH PHẦN MỀM CẦN CÓ CHO CUSTOMER/USER
+                VÀ TRẢI NGHIỆM KHI XÀI APP
+        FUNCTIONAL REQUIREMENTS                    vs.      NON-FUNCTIONAL REQUIREMENTS
+          yêu cầu (của k/h) (về) chức năng                   yêu cầu về chất lượng, trải nghiệm 
+                 (của app)                                   xài app - yêu cầu phi chức năng
+              VERB + OBJECT                                           ADJ
+              - hành động là gì, đạt đc gì                   - nhanh chậm xấu đẹp an toàn dễ dùng
+              - app có tính năng tạo mới đơn hàng            - app chạy nhanh nhen, 3s trở lại    
+              - app có tính năng xem thời khoá biểu            cho 1 xử lí
+              - app có tính năng chỉnh sửa profile           - app hỗ trợ ngôn ngữ vi, jp, kr, en    
+  * 2-3đ trong bài thi PE
+      * VIẾT THEO TEMPLATE FORMAL, ĐẸP, BAO QUÁT
+              - as a cashier/customer, 
+                    i want to create an order
+                       so that...
+              - as a student/lecturer
+                    i want to view the timetable
+                       so that...
+      > TÊN MỚI: USER STORY (một tình huống user muốn xài app)
+  *1-2đ trong bài thi PE
+     
+==================================================
+BÀI HỌC SỐ 3 - CÁC QUY TRÌNH LÀM PHẦN MỀM - SOFTWARE DEVELOPMENT PROCESS/MODEL/METHODOLOGY
+- Bàn về quy trình tức là bàn 1 trình tự cần tuân theo (bước trước, bước sau)
+
+- Để làm 1 phần mềm thì có nhiều bước/công việc/hoạt động (ko hàm ý thứ tự): 
+      REQUIREMENTS, DESIGN, IMPLEMENTATION, TESTING, DEPLOYEMENT, MAINTERNANCE/ENHANCEMENT
+  CÁCH PHỐI TRỘN CÁC BƯỚC NÊU TRÊN -> GỌI LÀ QUY TRÌNH LÀM P/M
+
+
+* CÁCH PHA CAFE: CAFE + SỮA; CÁCH RA ĐC LY CAFE SỮA, CÓ NHỮNG CÁCH
+- pha cafe phin
+- pha cafe vợt
+- pha cafe bằng bình xi-phông (syphon) 
+- pha cafe bằng máy pha (Passio)
+- pha cafe bằng cafe 3.1 hoà tan
+- ...
+
+* LÀM PHẦN MỀM CÓ 6 CÔNG VIỆC: REQUIREMENTS, DESIGN, IMPLEMENTATION, TESTING, DEPLOYEMENT, MAINTERNANCE/ENHANCEMENT; TRỘN NHƯ THẾ NÀO???
+CÓ 2 CÁCH TRỘN CƠ BẢN:
+1. TRUYỀN THỐNG - TRADITIONAL
+- WATERFALL ***** (1960s ->)
+- SASHIMI
+- ...
+
+2. MODERN - HIỆN ĐẠI - AGILE  
+- SCRUM ***** (2000 ->)
+- XP
+- KANBAN
+- LEAN START-UP
+- ...
+
+AGILE             ĐỘNG CƠ ĐỐT TRONG 4 THÌ           GIT                 ABSTRACT CLASS/INTERFACE
+NGUYÊN LÍ LÀM       NẠP-NÉN-NỔ-XẢ          QUẢN LÍ VERSION/CODE      CHỈ CÓ CHỨA METHOD/HÀM KO CODE
+APP                                                                         List, Map, Set
+MANIFESTO
+SCRUM, XP,        YAMAHA, HONDA, KAWASAKI    GITHUB, GITLAB, BITBUCKET           IMPLEMENTS :
+KANBAN, LEAN START-UP                                                           ArrayList, HashMap, HashSet
+
+-------------------------
+1. LÀM APP KIỂU TRUYỀN THỐNG - WATERFALL - MÔ HÌNH LÀM APP THEO KIỂU THÁC NƯỚC
+----
+    -----
+         ----
+             ----
+REQUIREMENTS, DESIGN, IMPLEMENTATION, TESTING, DEPLOYEMENT, MAINTERNANCE/ENHANCEMENT;
+* NGUYÊN TẮC: LÀM KIỂU CUỐN CHIẾU, XONG DỨT ĐIỂM 1 THỨ RỒI MỚI CHUYỂN SANG THỨ KHÁC
+              THE WHOLE, LUÔN LÀM TRÊN TOÀN BỘ, TỔNG THỂ
+              THE BIG BANG, CÚ NỔ LỚN, ONE-SHOT
+* VÍ DỤ: trường 3 chữ đặt hàng FSoft làm cái app Quản lí đào tạo - FAP
+CTY FSOFT ............................................................. Trường 3 chữ    
+                    Dân SE/BA chuyên viên đi (gặp) khách (hàng)
+                                                   hỏi chuyện trường xem trường đang quản lí học
+ 				                   hành đào tạo ra sao???
+- BA VÀ TRƯỜNG DÀNH ĐỦ THỜI GIAN ĐỂ HIỂU TRƯỜNG ĐANG QUẢN LÍ ĐÀO TẠO RA SAO, 
+  HIỂU XEM APP CẦN CÓ NHỮNG MÀN HÌNH GÌ ĐỂ PHỤC VỤ ĐC TẤT CẢ CÔNG VIỆC ĐÀO TẠO!!!
+  CỐ GẮNG HIỂU TRỌN VẸN CÂU CHUYỆN ĐÀO TẠO
+
+  3 CÂU HỎI HUYỀN THOẠI MÀ ĐÃ GIỚI THIỆU BỮA TRƯỚC
+  FAP viết cho Student, Lecturer, Academic Staff (role)
+  1*. Student làm đc gì với app/app cung cấp tính năng gì màn hình gì cho sv
+        - feedback 
+        - manage profile (view, edit) 
+        - view transcript (bảng điểm)
+        - view timetable 
+        - view attendance
+        - register classes
+        - send request (form)
+        ...
+  2*. Lecturer
+        - manage profile
+        - check student attendance
+        - view attendance
+        - view timetable
+        - ...
+  3*. Academic Staff
+        - manage timetable
+        - manage catalog
+        - ...
+ 
+  SAU 1 THÁNG BA ĐÃ HIỂU HẾT YÊU CẦU CỦA TRƯỜNG, REQUIREMENTS DONE
+  
+  REQUIREMENTS DONE
+  -----------------> 1 month
+                   --------------------> 2 months
+                      DESIGN: UI (login, main menu cho từng role
+                                  tkb, điểm danh, bảng điểm)
+                              ERD (table)
+                              ...
+                                       ------------------------> 4 months 
+                                          IMPLEMENTATION
+                                                               ---------------> 1 month 
+                                                                    TESTING
+                                                                               ------->
+                                                                               KH ĐC TRẢI NGHIỆM APP
+                   ............................................................|CHẠM APP
+                                                                                FULL KO CHE TÍNH NĂNG
+									        BIG BANG, ONE-SHOT
+								                APP BỰ CÓ SAU 1 T/G											 
+                           ---------
+		  ---------    
+	---------- 									 
+   -----
+
+* VẤN ĐỀ VỚI WATERFALL: APP RA Ở GIAI ĐOẠN CUỐI CỦA THỜI GIAN DỰ ÁN, NẾU REQS TỐT THÌ KO SAO, NẾU SAI, THIẾU SÓT, GIÁ PHẢI TRẢ LÀ SỬA KHA KHÁ!!!
+  - NẾU BA TA LỠ HIỂU SAI Ý K/H, LỠ THIẾU YÊU CẦU CHỨC NĂNG/MÀN HÌNH/TRẢI NGHIỆM, LỠ K/H NÓI MƠ HỒ KO RÕ
+    CÓ CÁCH NÀO ĐỂ FIX SỚM NHỮNG ĐIỀU NÀY!!! 
+
+  >>>>> AGILE LÀ SOLUTION!!!
+
+
+-------------------------
+2. LÀM APP KIỂU HIỆN ĐẠI - AGILE (LINH HOẠT) YEAR 2000 -> 
+
+3 CÂU HỎI HUYỀN THOẠI MÀ ĐÃ GIỚI THIỆU BỮA TRƯỚC
+  FAP viết cho Student, Lecturer, Academic Staff (role)
+KINH NGHIỆM CỦA DÂN BA/PO (PRODUCT OWNER) NHÌN NHANH DỰ ÁN LÀM APP CHO TRƯỜNG 3 CHỮ, BIẾT RẰNG APP PHỨC TẠP, NÊN CHỌN CHIẾN LƯỢC LINH HOẠT, DÒ TÌM RA CHÍNH XÁC MONG ƯỚC CỦA TRƯỜNG VỀ CÁI APP
+
+*NGUYÊN LÍ CHUNG: FEEDBACK CỦA K/H LIÊN TỤC, ĐỊNH KÌ, BẰNG CÁCH DEMO LIÊN TỤC, CÓ APP TỪ SỚM
+                  LÀM SAO CÓ APP TỪ SỚM: CHIA ĐỂ TRỊ, DIVIDE & CONQUER, ITERATIVE (LẶP), INCREMENTAL
+                  (TĂNG TRƯỞNG DẦN, LỚN DẦN, HẠT MẦM LỚN DẦN)
+                  CHIA NHỎ BÀI TOÁN, LÀM LUÔN RA APP (CHỈ CHO 1 CHỨC NĂNG, 1 MODULE, 1 NHÓM CHỨC NĂNG)
+                  MOVE NEXT
+
+* VÍ DỤ VỀ FAP
+- chia thời gian làm dự án thành đoạn đều nhau: 1 - 4 tuần
+   ------2w-------     ------2w-------         ------2w------- ------2w------- ------2w-------
+    CODE LUÔN           CODE LUÔN              CODE LUÔN
+    1 NHÓM CHỨC NĂNG   NHÓM CHỨC NĂNG KHÁC     NHÓM CHỨC NĂNG KẾ
+        DEMO               DEMO                  DEMO 
+       FEEDBACK TỪ SỚM; NHƯNG APP CHƯA FULL NGAY 
+                           TỪ TỪ TO DẦN LÊN, CỨ THẾ CỨ THẾ
+                             INCREMENTAL      ITERATIVE
+                  
+   Quản lí HSSV         Quản lí Catalog          Quản lí TKB      Quản lí TKB
+                       môn học của ngành 
+
+LINH HOẠT VỚI THỊ TRƯỜNG, THỊ HIẾU, MONG ĐỢI CỦA K/H, NẾU KHÁCH MUỐN ĐIỀU CHỈNH, CÓ CƠ HỘI ĐIỀU CHỈNH TỪ SỚM DO TẦN SUẤT GẶP K/H LIÊN TỤC!!!
+
+============
+2 PHƯƠNG PHÁP ĐỀU CÓ ƯU VÀ NHƯỢC ĐIỂM, VÀ CÓ ĐẤT ĐỂ DỤNG VÕ, TUỲ NGỮ CẢNH NÀO ĐÓ THÌ PHƯƠNG PHÁP NÀO SẼ LÀ PHÙ HỢP HƠN
+KHI NÀO THÌ CHỌN TRUYỀN THỐNG, KHI NÀO CHỌN AGILE???
+VỚI BÀI TOÁN NÀO CỦA KHÁCH, ĐẶC TRƯNG CỦA KHÁC, VỚI ĐẶC THÙ CỦA DEV TEAM, THÌ PHƯƠNG PHÁP NÀO NÊN ĐC DÙNG??? 
+
+- TRẢ LỜI ĐC CÂU HỎI NÀY, BẠN BIẾT CÁCH TIẾP CẬN GIẢI QUYẾT BÀI TOÁN LÀM PHẦN MỀM Ở NGOÀI ĐỜI
+
+- TRẢ LỜI ĐC CÂU HỎI NÀY, BẠN CÓ THÊM 3Đ BÀI THI PE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+SCRUM ĐANG THỊNH HÀNH Ở CÁC CTY PHẦN MỀM; PHẢI BIẾT NÓ (KHÁI NIỆM) ĐỂ KO BỠ NGỠ KHI ĐI THỰC TẬP - ĐI LÀM THẬT
+
+ĐỂ CHUẨN BỊ, CÁC BẠN VÀO WEBSITE JIRA.COM ĐĂNG KÍ 1 ACCOUNT FREE, CHỌN 1 URL ỨNG VỚI ACCOUNT CỦA BẠN
+
+================================================
+RECAP KIẾN THỨC CHO ĐẾN THỜI ĐIỂM W4
+- Làm phần mềm gồm nhiều bước: Requirements, Design, Implementation, Testing, Deployment, Maintenance/Enhancement
+
+- Có 2 cách phối trộn các bước này: Traditional       vs. Modern/Agile
+                                  - Waterfall...          Scrum, XP, Kanban, Lean start-up...  
+                                                          Manifesto: điều răn phải theo 
+Requirements: mong đợi của k/h, yêu cầu của k/h về app, tính năng họ cần để giúp cho c/v của họ
+              - Functional Reqs: yêu cầu (về) chức năng (mà app cần có)
+                                 Verb + target/goal/purpose
+                                 - CRUD ???
+                                 - viết tự do: app có tính năng tạo mới đơn hàng, hồ sơ bệnh nhân
+                                 - viết theo template: as a <role> i want to <what, verb, target> so that <purpose>
+                                     as a student i want to view my own attendance so that...
+                                                 [user story]
+           
+              - Non-Functional Reqs: yêu cầu phi chức năng: trải nghiệm, cảm xúc cần có mà app đem lại
+                                     "nhanh chậm, đẹp xấu, an toàn bảo mật, dễ dùng, tiện dụng
+                                      nhỏ gọn, cơ động, đa nền..."  
+                                     ADJ 
+
+================================================
+BUỔI HỌC 4: THỰC HÀNH VỀ AGILE/SCRUM -> LIÊN QUAN ĐẾN 1 CÂU 2 ĐIỂM TRONG BÀI PE
+            PHÂN TÍCH ƯU NHƯỢC 2 PHƯƠNG PHÁP LÀM APP/2 MÔ HÌNH MODEL LÀM APP (TRUYỀN THỐNG/HIỆN ĐẠI): 2-3 ĐIỂM BÀI PE
+    
+LỰA CHỌN MÔ HÌNH LÀM APP: TRADITIONAL/WATERFALL HAY SCRUM/AGILE???
+
+TUỲ VÀO RẤT NHIỀU THAM SỐ KHÁC NHAU, THÌ TA MỚI RA ĐC PHƯƠNG ÁN CHỌN MÔ HÌNH LÀM APP
+THƯỜNG NGƯỜI TA CĂN CỨ TRÊN 3 TIÊU CHÍ SAU:
+1. DỰA TRÊN ĐẶC TRƯNG/ĐẶC ĐIỂM CỦA REQUIREMENTS - REQUIREMENTS CHARACTERISTICS
+- Nếu requirement nó rõ, app quen làm, quen dạng: từng làm app QLBV Chợ Rẫy, thì chuyển sang làm 
+                                                           app QLBV Bình Dân
+  CHỌN WATERFALL VÌ REQUIREMENTS CLEAR, REALIABILITY; ÍT CÓ SỰ THAY ĐỔI: OFTEN OF CHANGE
+  MƠ HỒ, TA CHƯA TỪNG LÀM, REQS CHƯA RÕ: AGILE, VÌ CẦN FEEDBACK ĐỂ CHỈNH TRONG LẦN GẶP SỚM TỚI
+  EARLY KO RÕ, THÌ HỎI, FEEDBACK
+
+2. DỰA TRÊN DEVELOPMENT TEAM
+  GET FAMILIAR WITH... công nghệ: chưa quen công nghệ mới; thì cái Waterfall là lợi thế vì nó 
+                   rõ từng chặng, chặng design trên tổng thể app -> đánh giá đc phương án kĩ thuật
+                                : nhóm sẵn sàng thử nghiệm công nghệ -> Agile cho phép thử nghiệm
+                                  nhanh công nghệ ổn ko sau 2 tuần (Sprint) 
+                       requirements, bài toán, nghiệp vụ (cách user/khách hàng đang làm việc)
+                                  kinh nghiệm về reqs -> waterfall
+                                ko                    -> agile                
+
+3. MỨC ĐỘ USER/CUSTOMER SUPPORT DEV TEAM
+  USER INVOVEMENT: KHÁCH HÀNG, USER XÀI APP CỦA MÌNH TRONG TƯƠNG LAI CÓ RẢNH, CÓ SẴN SÀNGG GẶP MÌNH
+  NHIỀU LẦN HAY KO, TRONG THỜI GIAN LÀM DỰ ÁN -> AGILE
+  CHỈ GẶP Ở 1 GĐ NÀO ĐÓ, DO HỌ BẬN -> WATERFALL 
+
+  CÁI THƯỜNG XUYÊN GẶP GỠ CHO FEEDBACK, CẬP NHẬT THÊM REQS, GIẢI THÍCH HẾT REQS -> CHỌN NÀO???
+
+===========
+CHỐT:
+WATERFALL: PREDICTIVE METHOD - "DỰ ĐOÁN - TAO BIẾT RÕ MÀY, TAO THEO KẾ HOẠCH TỪNG CHẶNG GỌN GÀNG, BIG BANG BÙNG NỔ"
+AGILE    : ADAPTIVE METHOD   - "LINH HOẠT/THÍCH NGHI - TAO CHƯA RÕ MÀY, TAO CẦN MÀY FEEDBACK, INCREMENTAL, ITERATIVE"
+
+
+
+      

@@ -1,0 +1,127 @@
+1. QUY TRÌNH LÀM PHẦN MỀM
+- Làm phần mềm thì gồm nhiều hoạt động/công việc khác nhau (activity)
+  Cấm tuyệt đối ko đc nghĩ là: làm phần mềm là viết code
+                               viết code chỉ là 1 phần của quá trình làm p/m
+  Sóng bắt đầu từ gió, viết app từ ai đó đặt hàng, viết app bắt đầu từ 
+  REQUIREMENTS
+
+  SOFTWARE DEVELOPMENT ACTIVITIES:
+  - Requirements (BA, BrSE, PO, PRODUCT MANAGER)
+  - Design (UI (FIGMA), DB ERD/NOSQL, ARCHITECTURE (MVC2, 3-LAYER, API, MICRO SERVICES...)...)
+  - Implementation (viết code á) (CODER, PROGRAMMER, DEVELOPER, SOFTWARE ENGINEER)
+  - Testing/Validation (QA/QC/TESTER)  
+  - Deployement (cài đặt, bàn giao sử dụng) - GÃ TRIỂN KHAI
+  - Mainternance/Enhancement (bảo trì, nâng cấp, fix bug...) - GÃ HELP-DESK
+
+- CÔNG THỨC/KĨ THUẬT PHỐI TRỘN CÁC BƯỚC Ở TRÊN, ACTIVITY NÀO LÀM TRƯỚC, LÀM SAU, LÀM SONG 
+  SONG, LÀM TỪNG PHẦN ĐC GỌI LÀ SOFTWARE DEVELOPMENT PROCESS/MODEL/METHODOLOGY  
+     
+  2 NHÁNH QUY TRÌNH LỚN:
+  * TRADITIONAL: WATERFALL, SPIRAL, SASHIMI...
+
+  * MODERN - AGILE: SCRUM, XP, KANBAN, LEAN, LEAN START-UP  
+
+2_3. REQUIREMENTS - YÊU CẦU PHẦN MỀM - KÌ 5 MÔN SWR302 
+- a statement, một câu phát biểu regarding to: 
+             * What the system must do for customers/users to support for their daily activities
+                                                                          their business
+             * The characteristics/attribute of the system
+- là 1 câu phát biểu từ phía khách hàng (hoặc BA phát biểu giùm khách hàng) về 
+             * App có tính năng gì (nôm na: app có màn hình gì) để hỗ trợ cho công việc của khách hàng
+             * App có cái trải nghiệm như thế nào, chất lượng của app ra sao
+
+MONG ƯỚC CỦA KHÁCH HÀNG (NGƯỜI ĐẶT HÀNG LÀM APP) VÀ MONG ƯỚC CỦA USER - NGƯỜI XÀI APP
+TRÊN 2 GÓC NHÌN: TÍNH NĂNG, VÀ ĐỘ ĐO TRẢI NGHIỆM/CẢM XÚC
+
+             * FUNCTIONAL REQUIREMENTS - YÊU CẦU CHỨC NĂNG - APP LÀM GÌ CHO TUI (K/H, USER)
+
+             * NON-FUNCTIONAL REQUIREMENTS - YÊU CẦU PHI CHỨC NĂNG - CẢM XÚC KHI XÀI APP CỦA USER
+
+2_3_1 >>>>> FUNCTIONAL REQUIREMENTS 
+- nó là câu phát biểu, nói về tên màn hình, tên chức năng, tên tính năng, goal, target, what của
+  app sẽ làm cho họ
+  
+  mà khách hàng/user sẽ dùng màn hình này để giúp 1 công việc nào đó của họ (nếu ko có màn hình/chức
+  năng này họ vẫn phải làm, làm bằng tay, app cũ cùi bắp, Excel)   
+- tìm ra tên các màn hình làm đc điều gì đó cho khách hàng/user
+
+  VERB + OBJECT LIÊN QUAN 2 VIỆC CỦA APP: LƯU TRỮ, XỬ LÍ GÌ ĐÓ -> GOAL, TARGET, WHAT
+  - App cần có màn hình tạo mới hồ sơ bệnh nhân (App QLBV)
+  - App có màn hình login, login linh hoạt bằng account riêng, hoặc dùng luôn Gmail acc, FB acc
+  - App có màn hình edit profile 
+  - App có màn hình tạo mới đơn hàng (App thu ngân quán trà sữa Totoro)
+  - App có màn hình tạo mới đơn hàng, quản lí giỏ hàng (App Lazada, Shopee) 
+  - App có tính năng cho khách rút tiền (tại cây ATM)
+
+  CÂU FUNCTIONAL REQS CÓ THỂ VIẾT LẠI THEO 1 FORMAT ĐẸP HƠN, CHUẨN HƠN, HƯỚNG USER HƠN, GÓC NHÌN USER
+  LÀM ĐC GÌ VỚI APP, HƠN LÀ APP CÓ CHỨC NĂNG GÌ CHO USER, USER-ORIENTED 
+  AGILE THƯỜNG SẼ VIẾT REQS/FUNCTIONAL REQS THEO FORMAT ĐẸP
+ 
+  AS A <ROLE> I WANT TO <WHAT/VERB> SO THAT <BENEFIT, PURPOSE>
+  game nhập vai, góc nhìn thứ nhất, chủ động xài app
+
+  - App cần có màn hình tạo mới hồ sơ bệnh nhân/đơn thuốc (App QLBV) (truyền thống - Waterfall)
+  - As a Receptionist, I want to create a patient profile/record, so that the hospital can keep track
+    the treatment progress
+  - As a Doctor, I want to create a patient prescription, so that the I and my colleague can keep track
+    the treatment progress (Agile)
+
+  - App có màn hình tạo mới đơn hàng (App thu ngân quán trà sữa Totoro) (Waterfall)
+  - App has a feature of creating a new order (Cashier role) (Waterfall)
+  - As a cashier, I want to create a new order so that I can record the order/billing transaction (Agile)
+
+  CÂU FORMAT ĐẸP GỌI LÀ USER STORY (CÂU CHUYỆN 1 USER NÀO ĐÓ XÀI TÍNH NĂNG NÀO ĐÓ CHO C/V CỦA HỌ)
+ 
+2_3_2 >>>>> NON-FUNCTIONAL REQUIREMENTS
+- nó là câu phát biểu, nói về cái trải nghiệm xài app, cảm xúc khi xài app, khi xài các chức năng, màn 
+  hình
+
+  ADJECTIVE - TÍNH TỪ NÓI VỀ CHẤT LƯỢNG TRẢI NGHIỆM APP
+              "NHANH CHẬM, XẤU ĐẸP, LAG RĂNG CƯA, TO NHỎ, ĐA NGÔN NGỮ, ĐA NỀN, BẢO MẬT/PHÂN QUYỀN 
+              DỄ DÙNG DỄ XÀI, KHẢ DỤNG 24/7/365", PHÁP LUẬT, CHÍNH SÁCH       
+
+              ko focus vào 1 chức năng, 1 màn hình cụ thể, mà áp dụng cho toàn bộ app, all tính năng
+              NON - FUNCTIONAL REQS
+              TA KO FOCUS VÀO 1 CHỨC NĂNG CỤ THỂ, TA FOCUS VÀO CẢ CÁI APP
+              MÀN HÌNH DỄ THƯƠNG NHEN, LOGIN DỄ THƯƠNG, ADMIN DT, CRUD DỄ THƯƠNG 
+              APP KO RĂNG CƯA, KO LAG NHEN, TẤT CẢ KO LAG
+              CHUNG CHUNG CHO ALL CHỨC NĂNG, bao trùm các tính năng cần tuân thủ theo 
+
+              TRÁNH MƠ HỒ: APP CHẠY NHANH NHEN, THẾ NÀO LÀ NHANH???
+              PHẢI CÓ METRICS - ĐỘ ĐO, CON SỐ ĐỂ ĐÁNH GIÁ
+                           APP CHẠY NHANH NHEN, MỌI CÚ CLICK THÌ 3S TRỞ LẠI ĐÃ CÓ KQ
+                                         
+
+TIPS - MẸO ĐỂ TÌM REQUIREMENTS CHO ĐÚNG, ĐỦ 
+WH QUESTIONS - NHÌN CÁI APP SẼ LÀM CHO KHÁCH HÀNG/USER CỦA HỌ XÀI DƯỚI CÁC GÓC NHÌN SAU
+
+WHY?   |  WHAT?   |   WHO?
+
+1. WHO? APP VIẾT CHO AI DÙNG (USER TYPE, USER ROLE, ACTOR, USER CLASS, PERSONAS)
+
+2. WHAT? AI ĐÓ LÀM ĐƯỢC GÌ VỚI APP, TRẢI NGHIỆM GÌ VỚI APP, ĐEM LẠI Ý NGHĨA, LỢI ÍCH GÌ CHO CHỦ APP
+                      VERB/FUNCT         ADJ/NON-FUNCT               BENEFIT - WHY
+
+             ROLE ĐÓ ĐC MƯỚN VÀO CTY XÀI APP/KO XÀI APP CŨNG PHẢI LÀM VIỆC GÌ ĐÓ ĐỂ ĐC TRẢ LƯƠNG
+             
+             ROLE ĐÓ XÀI APP ĐEM LẠI GIÁ TRỊ GÌ CHO DOANH NGHIỆP  
+     
+"TÌM CÂU TRẢ LỜI NẰM Ở HOẠT ĐỘNG CỦA DOANH NGHIỆP, CỦA KHÁCH HÀNG"
+
+ĐI TỪ WHO -> WHAT/WHY VÌ WHO SỞ HỮU CÁC TÍNH NĂNG THEO ROLE ĐC PHÂN QUYỀN
+WHO: ĐỦ ÍT ĐỂ TÌM ĐỦ, CỨ THEO ROLE DOANH NGHIỆP/CTY/KHÁCH HÀNG MÀ ÁP MÀN HÌNH, CHỨC NĂNG HÀNH XỬ VÀO!!!!
+
+ĐỪNG QUÊN WHO: WHO THƯỜNG,           WHO QUẢN TRỊ DATA (vế ad, admin, administrator, mod, moderator)
+               đa số dùng            ít người nhưng: đảm bảo hệ thống, data vận hành ngon lành
+               ít quyền trên data              nhiều quyền trên data
+ 
+
+
+
+ 
+
+
+         
+
+
+ 
