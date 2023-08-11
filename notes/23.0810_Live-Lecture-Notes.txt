@@ -116,12 +116,74 @@ WHO: ĐỦ ÍT ĐỂ TÌM ĐỦ, CỨ THEO ROLE DOANH NGHIỆP/CTY/KHÁCH HÀNG 
                ít quyền trên data              nhiều quyền trên data
  
 
+===================================
+USER STORY MAPPING (USM)
+- LÀ 1 MA TRẬN 2 CHIỀU, TABLE HÀNG CỘT DÙNG ĐỂ SẮP XẾP, PHÂN LOẠI, TRỰC QUAN HOÁ (NHÌN TOÀN CẢNH), VISUALIZATION CÁC USER STORY CỦA 1 DỰ ÁN PHẦN MỀM, CÁC US ĐC SẮP XẾP THEO TIÊU CHÍ/GÓC NHÌN ĐEM LẠI GIÁ TRỊ TRẢI NGHIỆM/SỬ DỤNG APP CHO USER, SẮP XẾP THEO TIÊU CHÍ USER XÀI APP
+      SẮP XẾP US THEO TIÊU CHÍ: "WHAT THE USER WANTS"
+- LÀ 1 CÁI OUTLINE PHÁC THẢO CÁI TRẢI NGHIỆM CỦA USER, LỜI HỨA HẸN VỀ TRẢI NGHIỆM/HÀNH TRÌNH XÀI APP/JOURNEY
+  HOW CUSTOMER WILL USE OUR APP/PRODUCT
+  FOCUS VÀO USER BUSINESS/NGHIỆP VỤ NGƯỜI DÙNG: NGƯỜI DÙNG MUA HÀNG CÓ NHỮNG VIỆC GÌ - BUSINESS
+- BACKLOG (DANH SÁCH USER STORIES) ĐC VISUALIZE DẠNG ĐẸP MANG NHIỀU NGỮ NGHĨA: CHO DÂN DEV, CHO USER
+
+USER CÓ PROBLEM -> USM: HOW THE USER INTERACT WITH THE APP TO SOLVE THE PROBLEM 
+
+   HAI LEE 2:58 SỚM 12/8/2023 "USM LÀ KỊCH BẢN ĐẸP CHO CẢ USER, DEV TEAM. DÂN DEV PHẢI LÀM CHO NÓ XẢY RA - VỚI SỰ PHỐI HỢP CỦA USER/CUSTOMER"
+
+FLAT BACKLOG:
+NẾU KO XÀI USM THÌ SAO??? NGƯỜI TA CÓ NHỮNG CÁCH KHÁC ĐỂ QUẢN LÍ CÁC USER STORY (CÁC CHỨC NĂNG, LIST CÁC MÀN HÌNH CỦA APP SẼ LÀM); PHỔ BIẾN NHẤT GỌI LÀ FLAT BACKLOG
+TỨC LÀ: TOÀN BỘ CÁC USER STORY ĐC VIẾT RA/DÙNG TOOL NHẬP VÀO CX ĐC, HOẶC DÙNG BẢNG TRONG CÔNG TY VỚI STICKY NOTES DÁN LÊN, USER STORY ĐC BỐ TRÍ VÀO CÁC SPRINT (SWIMLANE) VỚI CÁC TIÊU CHÍ LỰA CHỌN VÀO SPRINT TUỲ... DEV TEAM
+
+     SẮP XẾP THEO TIÊU CHÍ - TECHNICAL VIEW, DEV TEAM VIEW, "WHAT THE PRODUCT COULD DO"
+
+=====================================
+KIỂM THỬ PHẦN MỀM - SOFTWARE TESTING - NGHỀ/VỊ TRÍ TUYỂN DỤNG: QA/QC/TESTER - QUALITY ASSURANCE, QUALITY CONTROL
+
+- NÔM NA: KIỂM THỬ PHẦN MỀM LÀ TÌM RA BUG, TÌM RA SAI SÓT (NẾU CÓ) TRONG PHẦN MỀM
+          KIỂM THỬ PHẦN MỀM LÀ SỰ XÁC NHẬN RẰNG APP ỔN ÁP, SẴN SÀNG ĐEM RA SỬ DỤNG - RELEASE
+
+          TA/DÂN QA/QC/TESTER CẦN PHẢI CÓ HÀNH ĐỘNG GÌ ĐÓ TRÊN APP THÌ MỚI KẾT LUẬN, APP NGON LÊN ĐƯỜNG, HAY CHƯA ĐC, FIX THÊM
+                                          HÀNH ĐỘNG GÌ ĐÓ, CỤ THỂ LÀ GÌ?  CÂU SỐ 5 TRONG ĐỀ THI PE: ĐỀ XUẤT PHƯƠNG ÁN
+                                                                                                    HÀNH ĐỘNG, CÁCH THỨC
+                                                                                                    KIỂM THỬ APP SKY MARKET
 
 
+- TIÊN ĐỀ, NGUYÊN LÍ KIỂM THỬ PHẦN MỀM: 
+  - EARLY TESTING: KIỂM THỬ CÀNG SỚM CÀNG TỐT, THẬM CHÍ NGAY KHI CHƯA VIẾT CODE ĐÃ TIẾN HÀNH KIỂM THỬ
+                   NGOÀI TÌM SAI SÓT, NGOÀI VIỆC CHỨNG MINH XÁC NHẬN ỔN, CÒN LÀ NGĂN NGỪA  
+- CÁC GÓC NHÌN, HOẠT ĐỘNG KIỂM THỬ, TƯ DUY KIỂM THỬ XOAY QUANH 3 CÂU HỎI (WH)
  
+  WHEN? KHI NÀO LÀM KIỂM THỬ  
+ 	
+  WHAT? KIỂM THỬ CÁI GÌ Ở "APP", MỤC TIÊU KIỂM THỬ, ĐO XÁC NHẬN CÁI GÌ Ở "APP"
+
+  HOW?  LÀM CÁCH NÀO, CỤ THỂ NHỮNG BƯỚC GÌ HÀNH ĐỘNG GÌ ĐỂ XÁC NHẬN CÁI "WHAT" Ở TRÊN
 
 
-         
+1. WHEN? KHI NÀO LÀM KIỂM THỬ - THỜI ĐIỂM DỰ ÁN NÓ CHẠY THEO TIẾN TRÌNH THỜI GIAN, APP HOÀN THIỆN DẦN  
+
+- Kiểm thử càng sớm càng tốt, ngay cả khi chưa viết code, chưa code thì ta có gì: requirements, design, User Story Mapping
+
+EARLY: Kiểm thử các: requirements, design, User Story Mapping 
+
+- Kiểm thử khi bắt đầu viết code: hàm/function/class: 
+
+- Kiểm thử khi bắt đầu có đc chức năng (UI/màn hình) functionality/functional req - user
+  
+- Kiểm thử khi toàn bộ các chức năng đã viết (RẤT NHIỀU MÀN HÌNH Ô NHẬP NÚT NHẤN + CODE + DATABASE) 
+
+DEV GÁY: NGON!!! NGON VỚI DEV HOY, CÒN KHÁCH HÀNG XÁC NHẬN NỮA CHI!!!
+
+
+EARLY: Kiểm thử các: requirements, design, User Story Mapping; CHƯA VIẾT CODE, CHƯA CÓ APP 
+
+2. HOW CỦA CÁI EARLY: ANH EM DEV TEAM, BA, ĐƯA TOÀN BỘ TÀI LIỆU, REQS, DESIGN BẢN VẼ UI/DB, USM
+                      CHO TUI/QA/QC/TESTER, TUI XEM CHO, TUI ĐỌC, TUI TƯ DUY, TUI COMMENT, FEEDBACK
+  
+                     DÙNG TAY, MẮT, TRÍ TUỆ TRÊN CÁC STUFF ANH EM DEV TEAM LÀM RA, CHƯA CÓ APP
+                     TÌM SAI SÓT, CHỨNG MINH ỔN
+                     HOW DẠNG NÀY ĐC GỌI LÀ: TESTING TECHNIQUE - KĨ THUẬT KIỂM THỬ DÙNG TAY CHÂN MẮT NÃO
+                     KHI CHƯA CÓ APP - TEST KHI CHƯA CÓ APP ĐC GỌI TÊN LÀ: STATIC TESTING
+  
 
 
  

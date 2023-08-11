@@ -96,3 +96,141 @@ CÂU 2-3 - FUNCTIONAL, NON-FUNCTIONAL REQS, USER STORIES
 BÀI TẬP VỀ NHÀ: LIỆT KÊ SẴN 1 LOẠT CÁC FUNCTIONAL REQS, NON-FUNCTIONAL REQS, USER STORY 
 
 TỐI MAI LIVE TIẾP!!!!!!!!!!!!!!!!!!
+---------------------
+1. NON-FUNCTIONAL REQS (ADJ-TÍNH TỪ)
+- App supports multiple browsers, e.g. Chrome, CocCoc, Firfox...
+- App supports dual-language: EN, VI
+- Màu cam, màu hường...
+- ...
+2. FUNCTIONAL REQS - USER STORIES (VERB/WHAT/WHY/WHO/TARGET/GOAL/PURPOSE/ TÊN MÀN HÌNH GIÚP LƯU TRỮ-XỬ LÍ)
+
+(sinh viên làm bài copy vô cảm, ko thèm sửa chữa, ChatGPT, nhờ thi giùm, ko thèm quan tâm ngữ cảnh bài toán)
+
+- App supports the login/sign-in process by using FB!!! SAI VÌ LÀM SAO XÁC NHẬN ĐC ĐÓ LÀ SV TRƯỜNG 
+- App supports the login/sign-in process by using school email (@fpt.edu.vn) -> ĐÚNG
+
+* App QLNS của 1 cty XYZ
+- App allows guest to register an account!!! -> SAI 
+
+- As an admin/ a human-resource staff, I want to create a new employee profile (and account included) 
+
+* BÀI SKY MARKET
+- Login (no register) by using school email
+- View a specific item (who ai xài??? ko cần login, ai cũng xài đc: guest, visitor
+- View the list of available items
+- Search available items by keyword, tag, category
+- Filter...
+- Post a new (old) item...
+- Create a new category...
+>>>>> USER STORY: as a... i want to... so that..
+- AS A GUEST, I WANT TO VIEW A SPECIFIC OLD ITEM IN DETAILS SO THAT I CAN DECIDE TO BUY IT OR NOT???
+                                                                    I COULD KNOW IF IT IS A DESIRED ONE!!!
+  
+DONE CÂU 2_3
+
+==========================================
+CÂU 4 - USER STORY MAPPING - DÍNH DÁNG ĐẾN USER STORY Ở TRÊN, USER STORY ~ FUNCTIONAL REQS ~ VERB -> GOAL
+NHỮNG MÀN HÌNH MÀ USER SẼ TRẢI NGHIỆM/DÙNG CHO CÔNG VIỆC MỤC ĐÍCH NÀO ĐÓ
+
+BÀI THI YÊU CẦU: CHỈ CHỌN 1 VÀI GOAL/MỤC TIÊU ỨNG VỚI USERS NÀO ĐÓ, TRIỂN KHAI CHI TIẾT NGANG -> STEPS/FLOW
+                                                                               CHI TIẾT DỌC   -> USER STORY
+
+KO YÊU CẦU LÀM TOÀN BỘ BÀI!!!
+
+
+CẤU TRÚC CHUNG CỦA USM
+
+USER? 
+
+GOAL/EPIC/JOURNEY 1     OAL/EPIC/JOURNEY 2             CỤM TÍNH NĂNG CHÍNH CỦA APP/TRẢI NGHIỆM CHÍNH    BUY OLD ITEMS           
+
+FLOW/STEPS/BACKBONE     CÁC LUỒNG HÀNH ĐỘNG ĐỂ ĐẠT ĐC 1 GOAL THEO TIME                                  Signup/in -> Add cart -> Order
+
+MVP                     CÁC USER STORY KHÁC NHAU  
+RELEASE
+(ĐỢT RELEASE SẢN PHẨM   VIẾT THEO CHIỀU DỌC
+TỐN THỜI GIAN ĐỂ CODE   ỨNG VỚI CÁC STEP
+                        Ở TRÊN
+                        NHÓM MÀN HÌNH LIÊN QUAN
+                        CÙNG LOẠI, CÙNG NHÓM
+                        BỔ TRỢ CHO TỪNG STEP CỦA HÀNH TRÒNH Ở BACKBONE
+
+
+===================================
+CÂU 5: ĐỀ XUẤT CÁC PHƯƠNG ÁN, CÁCH THỨC, KĨ THUẬT KIỂM THỬ CÁI APP SKY MARKET
+
+1. App sử dụng phương pháp phát triển phần mềm Agile/Scrum trong đó có Product Backlog, User Story Mapping, ... 
+   ... > kiểm thử đám này khi chưa có app -> STATIC TESTING 
+
+2. Theo tiến trình viết code làm app thì ta có các mức độ hoàn thiện app khác nhau, code nhiều dần lên
+   có code (có app) tức là có thể RUN TRÊN MÁY ĐC ÒI, TEST KHI CÓ APP/CODE RUN, NGHE ĐỘNG ĐẬY, 
+   ĐƯA CODE ĐÂY, APP ĐÂY, TUI CHẠY, TUI TEST XEM ỔN KHÔNG, DYNAMIC TESTING TECHNIQUE
+
+3. WHEN - DYNAMIC 
+- Kiểm thử khi bắt đầu viết code: hàm/function/class:  - THEO THỜI ĐIỂM CODE VỪA CÓ, ÍT ÍT
+
+    - hàm tính total cho bill                            >>>>> UNIT TESTING LEVEL
+    - hàm login()  y = f(x)                                   KIỂM THỬ ĐƠN VỊ
+    - hàm logout() 
+    - hàm createItem()
+    - hàm createCategory()
+     
+
+WHEN CODE NHIỀU - DYNAMIC Kiểm thử khi bắt đầu có đc chức năng (UI/màn hình) functionality/functional req - user
+                                              - THEO THỜI ĐIỂM CODE CÓ NHIỀU HƠN, CÓ CÁC PAGE/FEATURE/
+  - LOGIN                                                    FUNCTIONALITY
+  - SEARCH                                      GÓC NHÌN USER NGƯỜI DÙNG
+  - FILTER                                                       INTEGRATION TESTING LEVEL
+  - CHAT                                                        KIỂM THỬ TÍCH HỢP
+  - GIỎ HÀNG
+  - BILL/ORDER
+  - PROFILE
+  - FEEDBACK
+  - CAROUSEL 
+  - SALES/SẢN PHẨM 0Đ
+
+ FEATURE: TA LẠI CÓ MỤC TIÊU ĐỂ TEST, Ý ĐỊNH TEST TRÊN MỖI FEATURE LÀ GÌ??? 
+          GÓC NHÌN WHAT, ĐO GÌ???
+             - CHẠY ĐÚNG HAY SAI -> FUNCTIONAL TESTING TYPE
+             - UI/UX NGON HAY DỞ -> NON-FUNCTIONAL TESTING TYPE
+             - CHẠY NHANH HAY CHẬM -> NON-FUNCTIONAL TESTING TYPE, PERFORMANCE TESTING TYPE
+             
+                
+
+- Kiểm thử khi toàn bộ các chức năng đã viết (RẤT NHIỀU MÀN HÌNH Ô NHẬP NÚT NHẤN + CODE + DATABASE) 
+                                           APP NGON RỒI, HOÀN THIỆN RỒI, GÓC NHÌN NHÀ DEV HOY
+                                                               
+
+  - LOGIN                                                   
+  - SEARCH                                      GÓC NHÌN USER NGƯỜI DÙNG SYSTEM TESTING LEVEL 
+  - FILTER                                                              KIỂM THỬ HỆ THỐNG 
+  - CHAT
+  - GIỎ HÀNG
+  - BILL/ORDER
+  - PROFILE
+  - FEEDBACK
+  - CAROUSEL 
+  - SALES/SẢN PHẨM 0Đ  
+  - CRUD - CREATE, RETRIEVE/READ, UPDATE, DELETE X GÌ
+  - CRUD - CREATE, RETRIEVE/READ, UPDATE, DELETE X GÌ 
+            MỤC TIÊU TEST GÌ: CHỨC NĂNG CHẠY ĐÚNG SAI, NHANH CHẬM
+                     FUNCTIONAL TESTING TYPE, NON-FUNCTIONAL TESTING TYPE            
+
+
+DEV GÁY: NGON!!! NGON VỚI DEV HOY, CÒN KHÁCH HÀNG XÁC NHẬN NỮA CHI!!!  UAT LEVEL
+                                                    USER ACCEPTANCE TESTING LEVEL - KIỂM THỬ CHẤP NHẬN
+                                   
+                         MỤC TIÊU TEST GÌ: CHỨC NĂNG CHẠY ĐÚNG SAI, NHANH CHẬM
+                         FUNCTIONAL TESTING TYPE, NON-FUNCTIONAL TESTING TYPE            
+
+
+
+3 LEVEL INTEGRATION, SYSTEM, UAT CÓ 2 CÁCH TEST NHỎ HƠN ĐỂ KIỂM TRA CHỨC NĂNG/PHI CHỨC NĂNG
+                - DÙNG SỨC CHẠY APP, MẮT NHÌN, TAY CLICK, TAY NHẬP... -> MANUAL TESTING
+                - DÙNG CODE CHẠY APP NHƯ MA NHẬP                  ... -> AUTOMATION TESTING
+  
+
+
+
+
+
